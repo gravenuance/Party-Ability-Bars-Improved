@@ -404,6 +404,7 @@ local defaultAbilities = {
 		[51690] = 120, -- Killing Spree
 		[14177] = 180, -- Cold Blood
 		[36554] = 20, -- Shadowstep
+		[57934] = 30, -- Tricks of the Trade
 	},
 	["SHAMAN"] = {
 		[57994] = 6,   -- Wind Shear
