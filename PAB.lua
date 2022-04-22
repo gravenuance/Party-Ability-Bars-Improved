@@ -832,14 +832,18 @@ end
 function PAB:ApplyAnchorSettings()
 	PABIcons:SetScale(db.scale or 1)
 	
-	if db.arena then
+	if db.arena  then
 		if InArena() then
 			PABIcons:Show()
 		else
 			PABIcons:Hide()
 		end
-	elseif (UnitInRaid("player") == false) then
-		PABIcons:Show()
+	else
+		if (UnitInRaid("player") == nil) then
+			PABIcons:Show()
+		else 
+			PABIcons:Hide()
+		end
 	end
 
 	for k,v in ipairs(anchors) do
