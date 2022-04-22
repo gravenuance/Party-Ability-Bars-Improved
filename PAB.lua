@@ -418,6 +418,7 @@ local defaultAbilities = {
 		[36554] = 20, -- Shadowstep
 		[57934] = 30, -- Tricks of the Trade
 		[13877] = 120, -- Blade Flurry
+		[13750] = 180, -- Adrenaline Rush
 	},
 	["SHAMAN"] = {
 		[57994] = 6,   -- Wind Shear
