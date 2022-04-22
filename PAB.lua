@@ -54,6 +54,14 @@ local specAbilities = {
 			talentGroup = 1,
 			index = 13,
 		},
+		[13877] = { -- Blade Flurry
+			talentGroup = 2,
+			index = 15,
+		},
+		[13750] = { -- Adrenaline Rush
+			talentGroup = 2,
+			index = 20,
+		},
 	},
 	["PRIEST"] = {
 		[47585] = { -- Dispersion
@@ -349,6 +357,8 @@ local defaultAbilities = {
 		[53271] = 60,  -- Master's Call
 		[49012] = 30,  -- Wyvern Sting
 		[19577] = 60, -- Intimidation
+		[34477] = 30, -- Misdirection
+		[5384] = 30, -- Feign Death
 	},
 	["MAGE"] = 	{
 		[1953] = 15,   -- Blink
@@ -391,6 +401,8 @@ local defaultAbilities = {
 		[47788] = 180, -- Guardian Spirit
 		[10060] = 120, -- Power Infusion
 		[64901] = 360, -- Hymn of Hope
+		[64843] = 480, -- Divine Hymn
+		[586] = 30, -- Fade
 	},
 	["ROGUE"] = {
 		[1766] = 10,   -- Kick
@@ -405,6 +417,7 @@ local defaultAbilities = {
 		[14177] = 180, -- Cold Blood
 		[36554] = 20, -- Shadowstep
 		[57934] = 30, -- Tricks of the Trade
+		[13877] = 120, -- Blade Flurry
 	},
 	["SHAMAN"] = {
 		[57994] = 6,   -- Wind Shear
@@ -417,6 +430,8 @@ local defaultAbilities = {
 		[51533] = 180, -- Feral Spirit
 		[55198] = 180, -- Tidal Force
 		[16190] = 300, -- Mana Tide Totem
+		[2825] = 300, -- Bloodlust
+		[32182] = 300, -- Heroism
 	},
 	["WARLOCK"] = {
 		[19647] = 24,  -- Spell Lock
@@ -442,6 +457,7 @@ local defaultAbilities = {
 		[12328] = 30, -- Sweeping Strikes
 		[12292] = 180, -- Death Wish
 		[12975] = 180, -- Last Stand
+		[1719] = 300, -- Recklessness
 	},
 	["DEATHKNIGHT"] = {
 		[47528] = 10,  -- Mind Freeze
