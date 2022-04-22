@@ -838,7 +838,7 @@ function PAB:ApplyAnchorSettings()
 		else
 			PABIcons:Hide()
 		end
-	elseif (UnitInRaid("player") ~= false) then
+	elseif (UnitInRaid("player") == false) then
 		PABIcons:Show()
 	end
 
