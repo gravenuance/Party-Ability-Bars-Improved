@@ -857,7 +857,7 @@ function PAB:ApplyAnchorSettings()
 			PABIcons:Hide()
 		end
 	else
-		if (UnitInRaid("player") == nil) then
+		if db.party and (UnitInRaid("player") == nil) then
 			PABIcons:Show()
 		else 
 			PABIcons:Hide()
@@ -1234,6 +1234,14 @@ function PAB:CreateOptions()
 	     'getFunc', function() return db.arena end,
 	     'setFunc', function(value) db.arena = value; PAB:ApplyAnchorSettings() end)
 	arena:SetPoint("TOP",panel,"TOP",10,-36)
+
+	local party = panel:MakeToggle(
+	     'name', 'Party',
+	     'description', 'Show in party only',
+	     'default', true,
+	     'getFunc', function() return db.party end,
+	     'setFunc', function(value) db.party = value; PAB:ApplyAnchorSettings() end)
+	party:SetPoint("TOP",panel,"TOP",10,-140)
 	
 	local hidden = panel:MakeToggle(
 	    'name', 'Hidden',
@@ -1241,7 +1249,7 @@ function PAB:CreateOptions()
 	    'default', false,
 	    'getFunc', function() return db.hidden end,
 	    'setFunc', function(value) db.hidden = value; PAB:ApplyAnchorSettings() end)
-	hidden:SetPoint("LEFT",arena,"RIGHT",50,0)
+	hidden:SetPoint("LEFT",arena,"RIGHT",65,0)
 
 	local ApplyMovableFunction
 	local movable = panel:MakeToggle(
@@ -1263,7 +1271,7 @@ function PAB:CreateOptions()
 	     'default', false,
 	     'getFunc', function() return db.lock end,
 	     'setFunc', function(value) db.lock = value; PAB:ApplyAnchorSettings() end)	     
-	lock:SetPoint("LEFT",movable,"RIGHT",50,0)
+	lock:SetPoint("LEFT",movable,"RIGHT",65,0)
 
 	local iconsperline = panel:MakeSlider(
 		'name', 'Icons per line (0 = all)',
