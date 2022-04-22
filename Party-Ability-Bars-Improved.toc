@@ -1,7 +1,7 @@
 ## Interface: 30000
-## Author: Kolletiv and Drummer
+## Author: Kolletiv
 ## Title: Party Ability Bars Improved
-## SavedVariables: PABPVEDB
+## SavedVariables: PABDB
 ## X-Curse-Packaged-Version: 1.13
 ## X-Curse-Project-Name: Party Ability Bars
 ## X-Curse-Project-ID: pab
